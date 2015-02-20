@@ -7,13 +7,12 @@ from fabric.api import env, run, cd
 DEPLOYMENTS = {
     'prod': {
         'home':         '/var/www/',
-        'host_string':  'bamboo@bamboo.io',
+        'host_string':  'mapping@104.131.67.164',
         'virtual_env':  'bamboo',
         'repo_name':    'current',
         'project':      'bamboo',
         'docs':         'docs',
-        'branch':       'master',
-        'key_filename': os.path.expanduser('~/.ssh/modilabs.pem'),
+        'branch':       'resurrection',
         'init_script':  'bamboo_uwsgi.sh',
         'celeryd':      'celeryd',
     }
